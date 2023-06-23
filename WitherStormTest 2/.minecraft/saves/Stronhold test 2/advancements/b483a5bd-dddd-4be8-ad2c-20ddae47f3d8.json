@@ -1,0 +1,48 @@
+{
+  "dungeons_arise:wda_root": {
+    "criteria": {
+      "WDA": "2023-06-22 20:16:53 -0400"
+    },
+    "done": true
+  },
+  "tetra:spelunking/root": {
+    "criteria": {
+      "spelunking": "2023-06-22 20:19:31 -0400"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2023-06-22 20:16:47 -0400"
+    },
+    "done": true
+  },
+  "minecraft:story/follow_ender_eye": {
+    "criteria": {
+      "in_stronghold_integrated_stronghold": "2023-06-22 20:17:43 -0400"
+    },
+    "done": true
+  },
+  "runecraft:grant_book_on_first_join": {
+    "criteria": {
+      "tick": "2023-06-22 20:16:53 -0400"
+    },
+    "done": true
+  },
+  "parcool:grant_parcool_guide": {
+    "criteria": {
+      "tick": "2023-06-22 20:16:53 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:dripstone_caves": "2023-06-22 20:17:40 -0400",
+      "minecraft:swamp": "2023-06-22 20:16:48 -0400",
+      "minecraft:meadow": "2023-06-22 20:18:06 -0400",
+      "minecraft:savanna": "2023-06-22 20:17:27 -0400"
+    },
+    "done": false
+  },
+  "DataVersion": 2975
+}

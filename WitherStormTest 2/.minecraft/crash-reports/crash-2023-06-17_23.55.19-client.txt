@@ -1,0 +1,376 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 6/17/23, 11:55 PM
+Description: Initializing game
+
+org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-9.1.3.jar:9.1.3+9.1.3+main.9b69c82a] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-9.1.3.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-9.1.3.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-9.1.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:110) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$16(ModuleClassLoader.java:216) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:226) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:216) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:132) ~[securejarhandler-1.0.3.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?] {}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:503) ~[client-1.18.2-20220404.173914-srg.jar%23108!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:rubidium.mixins.json:core.MixinMinecraftClient,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:bettercombat.mixins.json:client.MinecraftClientAccessor,pl:mixin:APP:bettercombat.mixins.json:client.MinecraftClientInject,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:169) ~[client-1.18.2-20220404.173914-srg.jar%23108!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:31) ~[fmlloader-1.18.2-40.2.0.jar%2351!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:57) [ForgeWrapper-mmc3.jar:mmc3] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:243) [NewLaunch.jar:?] {}
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:278) [NewLaunch.jar:?] {}
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?] {}
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?] {}
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [chunkanimator.mixins.json:LevelRendererMixin] from phase [DEFAULT] in config [chunkanimator.mixins.json] FAILED during APPLY
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:636) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:588) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	... 41 more
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: @At("INVOKE") on net/minecraft/client/renderer/LevelRenderer::preventDefaultOffset with priority 1000 cannot inject into net/minecraft/client/renderer/LevelRenderer::m_172993_(Lnet/minecraft/client/renderer/RenderType;Lcom/mojang/blaze3d/vertex/PoseStack;DDDLcom/mojang/math/Matrix4f;)V merged by me.jellysquid.mods.sodium.mixin.features.chunk_rendering.MixinWorldRenderer with priority 1000 [PREINJECT Applicator Phase -> chunkanimator.mixins.json:LevelRendererMixin -> Prepare Injections ->  -> redirect$bbk000$preventDefaultOffset(Lcom/mojang/blaze3d/shaders/Uniform;FFF)V -> Prepare]
+	at org.spongepowered.asm.mixin.injection.code.Injector.findTargetNodes(Injector.java:305) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.code.Injector.find(Injector.java:240) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.prepare(InjectionInfo.java:421) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.prepareInjections(MixinTargetContext.java:1319) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.prepareInjections(MixinApplicatorStandard.java:1042) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:393) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:325) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:383) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:365) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	... 41 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-9.1.3.jar:9.1.3+9.1.3+main.9b69c82a] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-9.1.3.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-9.1.3.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-9.1.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:110) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$16(ModuleClassLoader.java:216) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:226) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:216) ~[securejarhandler-1.0.3.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:132) ~[securejarhandler-1.0.3.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?] {}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:503) ~[client-1.18.2-20220404.173914-srg.jar%23108!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:rubidium.mixins.json:core.MixinMinecraftClient,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:bettercombat.mixins.json:client.MinecraftClientAccessor,pl:mixin:APP:bettercombat.mixins.json:client.MinecraftClientInject,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:A,pl:runtimedistcleaner:A}
+-- Initialization --
+Details:
+	Modules: 
+		ADVAPI32.dll:Advanced Windows 32 Base API:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		COMCTL32.dll:User Experience Controls Library:6.10 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPT32.dll:Crypto API32:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTBASE.dll:Base cryptographic API DLL:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTSP.dll:Cryptographic Service Provider API:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		ColorAdapterClient.dll:Microsoft Color Adapter Client:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		CoreMessaging.dll:Microsoft CoreMessaging Dll:10.0.19041.2193:Microsoft Corporation
+		CoreUIComponents.dll:Microsoft Core UI Components Dll:10.0.19041.546:Microsoft Corporation
+		DBGHELP.DLL:Windows Image Helper:10.0.19041.867 (WinBuild.160101.0800):Microsoft Corporation
+		DEVOBJ.dll:Device Information Set DLL:10.0.19041.1620 (WinBuild.160101.0800):Microsoft Corporation
+		DNSAPI.dll:DNS Client API DLL:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		GDI32.dll:GDI Client DLL:10.0.19041.2913 (WinBuild.160101.0800):Microsoft Corporation
+		GLU32.dll:OpenGL Utility Library DLL:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		HID.DLL:Hid User Library:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		IMM32.DLL:Multi-User Windows IMM32 API Client DLL:10.0.19041.2673 (WinBuild.160101.0800):Microsoft Corporation
+		IPHLPAPI.DLL:IP Helper API:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		KERNEL32.DLL:Windows NT BASE API Client DLL:10.0.19041.2788 (WinBuild.160101.0800):Microsoft Corporation
+		KERNELBASE.dll:Windows NT BASE API Client DLL:10.0.19041.2788 (WinBuild.160101.0800):Microsoft Corporation
+		MMDevApi.dll:MMDevice API:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		MSACM32.dll:Microsoft ACM Audio Filter:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		MSASN1.dll:ASN.1 Runtime APIs:10.0.19041.2251 (WinBuild.160101.0800):Microsoft Corporation
+		MSCTF.dll:MSCTF Server DLL:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		MpOav.dll:IOfficeAntiVirus Module:4.18.23050.5 (b79513656627928b5505482e6c59e640a77adba5):Microsoft Corporation
+		NLAapi.dll:Network Location Awareness 2:10.0.19041.2913 (WinBuild.160101.0800):Microsoft Corporation
+		NSI.dll:NSI User-mode interface DLL:10.0.19041.610 (WinBuild.160101.0800):Microsoft Corporation
+		NTASN1.dll:Microsoft ASN.1 API:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		Ole32.dll:Microsoft OLE for Windows:10.0.19041.1320 (WinBuild.160101.0800):Microsoft Corporation
+		OleAut32.dll:OLEAUT32.DLL:10.0.19041.985 (WinBuild.160101.0800):Microsoft Corporation
+		OpenAL.dll
+		PROPSYS.dll:Microsoft Property System:7.0.19041.1708 (WinBuild.160101.0800):Microsoft Corporation
+		PSAPI.DLL:Process Status Helper:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		Pdh.dll:Windows Performance Data Helper DLL:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		RPCRT4.dll:Remote Procedure Call Runtime:10.0.19041.2788 (WinBuild.160101.0800):Microsoft Corporation
+		SAPIWrapper_x64.dll
+		SETUPAPI.DLL:Windows Setup API:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		SHCORE.dll:SHCORE:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		SHELL32.dll:Windows Shell Common Dll:10.0.19041.964 (WinBuild.160101.0800):Microsoft Corporation
+		UMPDC.dll
+		USER32.dll:Multi-User Windows USER API Client DLL:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		USERENV.dll:Userenv:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		VCRUNTIME140.dll:Microsoft® C Runtime Library:14.31.31103.0:Microsoft Corporation
+		VERSION.dll:Version Checking and File Installation Libraries:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		WINHTTP.dll:Windows HTTP Services:10.0.19041.2075 (WinBuild.160101.0800):Microsoft Corporation
+		WINMM.dll:MCI API DLL:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		WINSTA.dll:Winstation Library:10.0.19041.2075 (WinBuild.160101.0800):Microsoft Corporation
+		WINTRUST.dll:Microsoft Trust Verification APIs:10.0.19041.2913 (WinBuild.160101.0800):Microsoft Corporation
+		WS2_32.dll:Windows Socket 2.0 32-Bit DLL:10.0.19041.1081 (WinBuild.160101.0800):Microsoft Corporation
+		WSOCK32.dll:Windows Socket 32-Bit DLL:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		WTSAPI32.dll:Windows Remote Desktop Session Host Server SDK APIs:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		Wldp.dll:Windows Lockdown Policy:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		amsi.dll:Anti-Malware Scan Interface:10.0.19041.2075 (WinBuild.160101.0800):Microsoft Corporation
+		apphelp.dll:Application Compatibility Client Library:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		awt.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		bcrypt.dll:Windows Cryptographic Primitives Library:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		bcryptPrimitives.dll:Windows Cryptographic Primitives Library:10.0.19041.2486 (WinBuild.160101.0800):Microsoft Corporation
+		cfgmgr32.dll:Configuration Manager DLL:10.0.19041.1620 (WinBuild.160101.0800):Microsoft Corporation
+		clbcatq.dll:COM+ Configuration Catalog:2001.12.10941.16384 (WinBuild.160101.0800):Microsoft Corporation
+		combase.dll:Microsoft COM for Windows:10.0.19041.1320 (WinBuild.160101.0800):Microsoft Corporation
+		cryptnet.dll:Crypto Network Related API:10.0.19041.906 (WinBuild.160101.0800):Microsoft Corporation
+		dbgcore.DLL:Windows Core Debugging Helpers:10.0.19041.2788 (WinBuild.160101.0800):Microsoft Corporation
+		dhcpcsvc.DLL:DHCP Client Service:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		dhcpcsvc6.DLL:DHCPv6 Client:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		dinput8.dll:Microsoft DirectInput:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		drvstore.dll:Driver Store API:10.0.19041.2546 (WinBuild.160101.0800):Microsoft Corporation
+		dwmapi.dll:Microsoft Desktop Window Manager API:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		dxcore.dll:DXCore:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		fastprox.dll:WMI Custom Marshaller:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		fwpuclnt.dll:FWP/IPsec User-Mode API:10.0.19041.2913 (WinBuild.160101.0800):Microsoft Corporation
+		gdi32full.dll:GDI Client DLL:10.0.19041.2913 (WinBuild.160101.0800):Microsoft Corporation
+		glfw.dll
+		icm32.dll:Microsoft Color Management Module (CMM):10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		inputhost.dll:InputHost:10.0.19041.1741 (WinBuild.160101.0800):Microsoft Corporation
+		java.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		javaw.exe:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		jimage.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		jli.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		jna2978455218283281209.dll:JNA native library:6.1.2:Java(TM) Native Access (JNA)
+		jsvml.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		jvm.dll:Java HotSpot(TM) 64-Bit server VM:17.0.7.0:Oracle Corporation
+		kernel.appcore.dll:AppModel API Host:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		lwjgl.dll
+		lwjgl_opengl.dll
+		lwjgl_stb.dll
+		management.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		management_ext.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		mscms.dll:Microsoft Color Matching System DLL:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		msdmo.dll:DMO Runtime:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		msvcp140.dll:Microsoft® C Runtime Library:14.31.31103.0:Microsoft Corporation
+		msvcp_win.dll:Microsoft® C Runtime Library:10.0.19041.789 (WinBuild.160101.0800):Microsoft Corporation
+		msvcrt.dll:Windows NT CRT DLL:7.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		mswsock.dll:Microsoft Windows Sockets 2.0 Service Provider:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		napinsp.dll:E-mail Naming Shim Provider:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		ncrypt.dll:Windows NCrypt Router:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		net.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		nio.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		ntdll.dll:NT Layer DLL:10.0.19041.2788 (WinBuild.160101.0800):Microsoft Corporation
+		ntmarta.dll:Windows NT MARTA provider:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		nvoglv64.dll:NVIDIA Compatible OpenGL ICD:31.0.15.1694:NVIDIA Corporation
+		nvspcap64.dll:NVIDIA Game Proxy:3.27.0.112:NVIDIA Corporation
+		opengl32.dll:OpenGL Client DLL:10.0.19041.2193 (WinBuild.160101.0800):Microsoft Corporation
+		perfos.dll:Windows System Performance Objects DLL:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		pnrpnsp.dll:PNRP Name Space Provider:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		powrprof.dll:Power Profile Helper DLL:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		profapi.dll:User Profile Basic API:10.0.19041.844 (WinBuild.160101.0800):Microsoft Corporation
+		rasadhlp.dll:Remote Access AutoDial Helper:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		rsaenh.dll:Microsoft Enhanced Cryptographic Provider:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		sapi.dll:Speech API:5.3.24006.00 (WinBuild.160101.0800):Microsoft Corporation
+		sechost.dll:Host for SCM/SDDL/LSA Lookup APIs:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		shlwapi.dll:Shell Light-weight Utility Library:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		sunmscapi.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		textinputframework.dll:"TextInputFramework.DYNLINK":10.0.19041.2913 (WinBuild.160101.0800):Microsoft Corporation
+		ucrtbase.dll:Microsoft® C Runtime Library:10.0.19041.789 (WinBuild.160101.0800):Microsoft Corporation
+		uxtheme.dll:Microsoft UxTheme Library:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		vcruntime140_1.dll:Microsoft® C Runtime Library:14.31.31103.0:Microsoft Corporation
+		verify.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+		wbemcomn.dll:WMI:10.0.19041.1566 (WinBuild.160101.0800):Microsoft Corporation
+		wbemprox.dll:WMI:10.0.19041.1320 (WinBuild.160101.0800):Microsoft Corporation
+		wbemsvc.dll:WMI:10.0.19041.1320 (WinBuild.160101.0800):Microsoft Corporation
+		win32u.dll:Win32u:10.0.19041.2913 (WinBuild.160101.0800):Microsoft Corporation
+		windows.storage.dll:Microsoft WinRT Storage API:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		winmmbase.dll:Base Multimedia Extension API DLL:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		winrnr.dll:LDAP RnR Provider DLL:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		wintypes.dll:Windows Base Types DLL:10.0.19041.1320 (WinBuild.160101.0800):Microsoft Corporation
+		wshbth.dll:Windows Sockets Helper DLL:10.0.19041.546 (WinBuild.160101.0800):Microsoft Corporation
+		xinput1_4.dll:Microsoft Common Controller API:10.0.19041.1 (WinBuild.160101.0800):Microsoft Corporation
+		zip.dll:Java(TM) Platform SE binary:17.0.7.0:Oracle Corporation
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:169) ~[client-1.18.2-20220404.173914-srg.jar%23108!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:31) ~[fmlloader-1.18.2-40.2.0.jar%2351!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.3.jar%2339!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:57) [ForgeWrapper-mmc3.jar:mmc3] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:243) [NewLaunch.jar:?] {}
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:278) [NewLaunch.jar:?] {}
+	at org.multimc.EntryPoint.listen(EntryPoint.java:143) [NewLaunch.jar:?] {}
+	at org.multimc.EntryPoint.main(EntryPoint.java:34) [NewLaunch.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.2
+	Minecraft Version ID: 1.18.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.7, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 5536194152 bytes (5279 MiB) / 8455716864 bytes (8064 MiB) up to 8455716864 bytes (8064 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+	Identifier: Intel64 Family 6 Model 94 Stepping 3
+	Microarchitecture: Skylake (Client)
+	Frequency (GHz): 4.01
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: NVIDIA GeForce GTX 1080
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x1b80
+	Graphics card #0 versionInfo: DriverVersion=31.0.15.1694
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.13
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.13
+	Memory slot #1 type: DDR4
+	Memory slot #2 capacity (MB): 8192.00
+	Memory slot #2 clockSpeed (GHz): 2.13
+	Memory slot #2 type: DDR4
+	Memory slot #3 capacity (MB): 8192.00
+	Memory slot #3 clockSpeed (GHz): 2.13
+	Memory slot #3 type: DDR4
+	Virtual memory max (MB): 39645.35
+	Virtual memory used (MB): 34870.41
+	Swap memory total (MB): 6952.38
+	Swap memory used (MB): 1308.32
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms8064m -Xmx8064m
+	Launched Version: 1.18.2
+	Backend library: LWJGL version 3.2.2 SNAPSHOT
+	Backend API: NVIDIA GeForce GTX 1080/PCIe/SSE2 GL version 3.2.0 NVIDIA 516.94, NVIDIA Corporation
+	Window size: <not initialized>
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	CPU: 8x Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+	ModLauncher: 9.1.3+9.1.3+main.9b69c82a
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		 mixin PLUGINSERVICE 
+		 eventbus PLUGINSERVICE 
+		 slf4jfixer PLUGINSERVICE 
+		 object_holder_definalize PLUGINSERVICE 
+		 runtime_enum_extender PLUGINSERVICE 
+		 capability_token_subclass PLUGINSERVICE 
+		 accesstransformer PLUGINSERVICE 
+		 runtimedistcleaner PLUGINSERVICE 
+		 mixin TRANSFORMATIONSERVICE 
+		 fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		clienttweaks-forge-1.18.1-7.1.0.jar               |Client Tweaks                 |clienttweaks                  |7.1.0               |COMMON_SET|Manifest: NOSIGNATURE
+		Wooden+Elytra+1.18.2.jar                          |Wooden Elytra                 |wooden_elytra                 |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		jei-1.18.2-9.7.1.255.jar                          |Just Enough Items             |jei                           |9.7.1.255           |COMMON_SET|Manifest: NOSIGNATURE
+		dynamiclights-1.18.6.jar                          |Dynamic Lights                |dynamiclights                 |1.18.6              |COMMON_SET|Manifest: NOSIGNATURE
+		caelus-forge-1.18.1-3.0.0.2.jar                   |Caelus API                    |caelus                        |1.18.1-3.0.0.2      |COMMON_SET|Manifest: NOSIGNATURE
+		sophisticatedcore-1.18.2-0.5.70.320.jar           |Sophisticated Core            |sophisticatedcore             |1.18.2-0.5.70.320   |COMMON_SET|Manifest: NOSIGNATURE
+		rubidium-0.5.3a.jar                               |Rubidium                      |rubidium                      |0.5.3a              |COMMON_SET|Manifest: NOSIGNATURE
+		modnametooltip-1.18.1-1.18.0.jar                  |Mod Name Tooltip              |modnametooltip                |1.18.0              |COMMON_SET|Manifest: NOSIGNATURE
+		nock_enough_arrows-1.18.2-1.1.0.jar               |Nock Enough Arrows            |nock_enough_arrows            |1.18.2-1.1.0        |COMMON_SET|Manifest: NOSIGNATURE
+		CTM-1.18.2-1.1.5+5.jar                            |ConnectedTexturesMod          |ctm                           |1.18.2-1.1.5+5      |COMMON_SET|Manifest: NOSIGNATURE
+		Controlling-forge-1.18.2-9.0+23.jar               |Controlling                   |controlling                   |9.0+23              |COMMON_SET|Manifest: NOSIGNATURE
+		citadel-1.11.3-1.18.2.jar                         |Citadel                       |citadel                       |1.11.3              |COMMON_SET|Manifest: NOSIGNATURE
+		alexsmobs-1.18.6.jar                              |Alex's Mobs                   |alexsmobs                     |1.18.6              |COMMON_SET|Manifest: NOSIGNATURE
+		configured-2.0.1-1.18.2.jar                       |Configured                    |configured                    |2.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		creeperaiupdated-1.5.1 (1).jar                    |Creeper AI Updated            |creeperaiupdated              |1.5.1               |COMMON_SET|Manifest: NOSIGNATURE
+		spellblademod-1.18.2.release.8.2.jar              |Spellblade                    |spellblademod                 |1.18.2.release.8.2  |COMMON_SET|Manifest: NOSIGNATURE
+		sophisticatedbackpacks-1.18.2-3.18.52.846.jar     |Sophisticated Backpacks       |sophisticatedbackpacks        |1.18.2-3.18.52.846  |COMMON_SET|Manifest: NOSIGNATURE
+		starlight-1.0.2+forge.546ae87.jar                 |Starlight                     |starlight                     |1.0.2+forge.83663de |COMMON_SET|Manifest: NOSIGNATURE
+		jeed-1.18.2-1.11.jar                              |Just Enough Effect Description|jeed                          |1.18.2-1.11         |COMMON_SET|Manifest: NOSIGNATURE
+		balm-3.2.0+0.jar                                  |Balm                          |balm                          |3.2.0+0             |COMMON_SET|Manifest: NOSIGNATURE
+		carryon-1.18.2-1.17.1.11.jar                      |Carry On                      |carryon                       |1.17.1.11           |COMMON_SET|Manifest: NOSIGNATURE
+		JustEnoughResources-1.18.2-0.14.1.171.jar         |Just Enough Resources         |jeresources                   |0.14.1.171          |COMMON_SET|Manifest: NOSIGNATURE
+		Craft-Vania-1.18.2-1.3.3.jar                      |Craft-Vania                   |craftvania2                   |1.3.3               |COMMON_SET|Manifest: NOSIGNATURE
+		cloth-config-6.4.90-forge.jar                     |Cloth Config v4 API           |cloth_config                  |6.4.90              |COMMON_SET|Manifest: NOSIGNATURE
+		forge-1.18.2-40.2.0-universal.jar                 |Forge                         |forge                         |40.2.0              |COMMON_SET|Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		MmmMmmMmmMmm-1.18.2-1.5.2.jar                     |MmmMmmMmmMmm                  |dummmmmmy                     |1.18-1.5.2          |COMMON_SET|Manifest: NOSIGNATURE
+		konkrete_forge_1.5.1_MC_1.18-1.18.2.jar           |Konkrete                      |konkrete                      |1.5.1               |COMMON_SET|Manifest: NOSIGNATURE
+		client-1.18.2-20220404.173914-srg.jar             |Minecraft                     |minecraft                     |1.18.2              |COMMON_SET|Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		tenshilib-1.18.2-1.6.15-forge.jar                 |TenshiLib                     |tenshilib                     |1.18.2-1.6.15       |COMMON_SET|Manifest: NOSIGNATURE
+		theoneprobe-1.18-5.1.2.jar                        |The One Probe                 |theoneprobe                   |1.18-5.1.2          |COMMON_SET|Manifest: NOSIGNATURE
+		MouseTweaks-forge-mc1.18-2.21.jar                 |Mouse Tweaks                  |mousetweaks                   |2.21                |COMMON_SET|Manifest: NOSIGNATURE
+		ShoulderSurfing-Forge-1.18.2-2.3.2.jar            |Shoulder Surfing              |shouldersurfing               |1.18.2-2.3.2        |COMMON_SET|Manifest: NOSIGNATURE
+		ChunkAnimator-1.18.2-1.3.4.jar                    |Chunk Animator                |chunkanimator                 |1.18.2-1.3.4        |COMMON_SET|Manifest: NOSIGNATURE
+		elenaidodge2-1.0.2.jar                            |Elenai Dodge 2                |elenaidodge2                  |1.0.2               |COMMON_SET|Manifest: NOSIGNATURE
+		player-animation-lib-forge-1.0.2+1.18.jar         |Player Animator               |playeranimator                |1.0.2+1.18          |COMMON_SET|Manifest: NOSIGNATURE
+		bettercombat-forge-1.6.2+1.18.2 (1).jar           |Better Combat                 |bettercombat                  |1.6.2+1.18.2        |COMMON_SET|Manifest: NOSIGNATURE
+		curios-forge-1.18.2-5.0.9.1.jar                   |Curios API                    |curios                        |1.18.2-5.0.9.1      |COMMON_SET|Manifest: NOSIGNATURE
+		relics-1.18.2-0.4.1.8.jar                         |Relics                        |relics                        |0.4.1.8             |COMMON_SET|Manifest: NOSIGNATURE
+		Patchouli-1.18.2-71.1.jar                         |Patchouli                     |patchouli                     |1.18.2-71.1         |COMMON_SET|Manifest: NOSIGNATURE
+		Searchables-forge-1.18.2-1.0.1.jar                |Searchables                   |searchables                   |1.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		ParCool-1.18.2-3.0.1.0-R.jar                      |ParCool!                      |parcool                       |1.18.2-3.0.1.0-R    |COMMON_SET|Manifest: NOSIGNATURE
+		feathers-1.0.4.jar                                |Feathers                      |feathers                      |1.0.4               |COMMON_SET|Manifest: NOSIGNATURE
+		irons_spellbooks-1.18.2-1.1.4.1.jar               |Iron's Spells 'n Spellbooks   |irons_spellbooks              |1.18.2-1.1.4.1      |COMMON_SET|Manifest: NOSIGNATURE
+		witherstormmod-1.18.2-2.0.1.2.jar                 |Cracker's Wither Storm Mod    |witherstormmod                |2.0.1.2             |COMMON_SET|Manifest: NOSIGNATURE
+		canary-mc1.18.2-0.2.1.jar                         |Canary                        |canary                        |0.2.1               |COMMON_SET|Manifest: NOSIGNATURE
+		pluto-mc1.18.2-0.0.6.jar                          |Pluto                         |pluto                         |0.0.6               |COMMON_SET|Manifest: NOSIGNATURE
+		architectury-4.11.93-forge.jar                    |Architectury                  |architectury                  |4.11.93             |COMMON_SET|Manifest: NOSIGNATURE
+		simplyswords-forge-1.40-1.18.2.jar                |Simply Swords                 |simplyswords                  |1.40-1.18.2         |COMMON_SET|Manifest: NOSIGNATURE
+		appleskin-forge-mc1.18.2-2.4.1.jar                |AppleSkin                     |appleskin                     |2.4.1+mc1.18.2      |COMMON_SET|Manifest: NOSIGNATURE
+		ferritecore-4.2.1-forge.jar                       |Ferrite Core                  |ferritecore                   |0.0NONE             |COMMON_SET|Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		curiouselytra-forge-1.18.1-5.0.1.0.jar            |Curious Elytra                |curiouselytra                 |1.18.1-5.0.1.0      |COMMON_SET|Manifest: NOSIGNATURE
+		justzoom_forge_1.0.1_MC_1.18-1.18.1.jar           |Just Zoom                     |justzoom                      |1.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		Aquaculture-1.18.2-2.3.12.jar                     |Aquaculture 2                 |aquaculture                   |1.18.2-2.3.12       |COMMON_SET|Manifest: NOSIGNATURE
+		RuneCraft-1.18.2-(v.3.5.3).jar                    |RuneCraft                     |runecraft                     |3.5.3               |COMMON_SET|Manifest: NOSIGNATURE
+		improvedmobs-1.18.2-1.11.0-forge.jar              |Improved Mobs Mod             |improvedmobs                  |1.18.2-1.11.0       |COMMON_SET|Manifest: NOSIGNATURE
+		GameMenuModOption-1.18-Forge-1.14.2.jar           |Game Menu Mod Option          |gamemenumodoption             |1.14.2              |COMMON_SET|Manifest: NOSIGNATURE
+		geckolib-forge-1.18-3.0.57.jar                    |GeckoLib                      |geckolib3                     |3.0.57              |COMMON_SET|Manifest: NOSIGNATURE
+	Crash Report UUID: 31a1ee8a-b2d0-488d-80a9-9f34cc4e3fbf
+	FML: 40.2
+	Forge: net.minecraftforge:40.2.0

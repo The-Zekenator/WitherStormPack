@@ -1,0 +1,33 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "apotheosis:apoth_chronicle": {
+      "viewedEntries": [],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "parcool:parcool_guide": {
+      "viewedEntries": [
+        "parcool:actions/flipping",
+        "parcool:actions/fast_run",
+        "parcool:actions/breakfall"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "ageofweapons:weapons_book": {
+      "viewedEntries": [],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "runecraft:book_of_rune_magic": {
+      "viewedEntries": [
+        "runecraft:basics-runes",
+        "runecraft:basics-portable_rune_stones"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
+}
