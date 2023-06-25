@@ -1,0 +1,44 @@
+
+#--------------------------------------------------------
+#Client Party Settings
+#Type /party reload in-game to reload this configuration.
+#--------------------------------------------------------
+[presets]
+	#The default preset to load on the client. It's automatically set to load your last preset used.
+	defaultPreset = "4|-7|AIAIBUgggAAgUAgAgL7vn/wAuAHCgRAQlcAQCAcanl//+pqf///wLgKwo8WBAQggGjU8v////+BcBWFHiwICEf+pqf///wLgKwKPFgQEYITgBFu+f+BWAUwwnQB+/ZmYAyApgg7AIW75/8AAADBBQAQ4AAAEAUAUKMCYAYAYKMCTBAuAQt3z/4AAAGCAIBYBRwH/FwAAAKCEeAgAuAVDAAAAE/+dB3kKZTa8APyYAcEC4BoHgArCAAAAAF4v/itn+2f+Li/7Y2KEC4CQPAAzCAAAA8nMr/bLD/Z5DWHTtsUIFwEgeABmEAAABxLnMr/bLD/EmubDElq0IFwEgeABmEAAABaor/bWVOWkZs6fPZ1y"
+
+[hide-overlays]
+	#Enable the Vanilla Potion Effect HUD
+	renderPotionEffects = false
+	#Enable the vanilla XP Bar Display
+	renderXPBar = true
+	#Enable the Vanilla Health HUD
+	renderPlayerHealth = true
+	#Enable the Vanilla Armor HUD
+	renderPlayerArmor = true
+	#Enable the Vanilla Hunger Display
+	renderHunger = true
+	#Enable the Thirst Bar Display (Tough as Nails, Thirst was Taken)
+	renderThirst = true
+	#Enable the Temperature Display (Tough as Nails)
+	renderTemperature = true
+	#Enable the Mana Display (Ars Nouveau)
+	renderMana = true
+	#Enable the Mana Display (Spells and Shields)
+	renderSSMana = true
+	#Enable the Stamina display (Feathers Mod)
+	renderFeathers = true
+
+[party-ui]
+	#Render your information as a party member.
+	#If true, this will include you in the party list. This will also render your information when outside the party.
+	#If false, your information will NOT be rendered both in a party and outside a party.
+	renderSelfFrame = true
+	#Makes all the models drawn on the party frame face forward if true.
+	#Self model is drawn when the head element has Head Type at 1, or 2 for the entire party.
+	forceModelRotation = false
+	#Offset of the front-facing model if forceModelRotation is enabled.
+	#Negative values make the model face right, while positive values make the model face left.
+	#Range: -180 ~ 180
+	rotationOffset = -20
+
