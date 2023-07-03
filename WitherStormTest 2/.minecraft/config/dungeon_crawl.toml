@@ -13,7 +13,7 @@
 	#----------------------------------------------------------------------------------------------------+
 	# Whether falling blocks like sand or gravel should drop down after being placed during dungeon generation.
 	#
-	tick_falling_blocks = true
+	tick_falling_blocks = false
 	#----------------------------------------------------------------------------------------------------+
 	# Makes the entire dungeon solid, preventing caves, ravines, etc... from interfering with the dungeon.
 	#
@@ -32,7 +32,7 @@
 	# Whether loot tables of certain spawner entities should be overwritten.
 	# For example, wither skeletons from dungeon spawners will never drop skulls if this is enabled.
 	#
-	overwrite_entity_loot_tables = true
+	overwrite_entity_loot_tables = false
 	#----------------------------------------------------------------------------------------------------+
 	# Whether custom mob spawners with equipment, etc.. should be used.
 	#
@@ -54,5 +54,5 @@
 	# The number of different entities per spawner. Increasing the number increases the diversity of the monster equipment.
 	#
 	#Range: 1 ~ 128
-	spawner_entities = 6
+	spawner_entities = 10
 

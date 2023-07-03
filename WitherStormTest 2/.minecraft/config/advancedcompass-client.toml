@@ -5,7 +5,7 @@
 	yOffset = 4
 	#Maximum distance to entity for rendering (from 0 to 999)
 	#Range: 0 ~ 999
-	maxDistance = 999
+	maxDistance = 256
 	#Maximum radius to merge entity into groups (from 5 to 15)
 	#Range: 5 ~ 15
 	groupRadius = 10
